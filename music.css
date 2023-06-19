@@ -1,0 +1,737 @@
+/* .{
+    box-sizing: border-box;
+} */
+
+body{
+    background-color: rgb(18, 28, 106);
+    /* width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.margin{
+    margin-left: -20%;
+}
+
+.profile{
+    border-radius: 50%;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+.bell{
+    color: black;
+}
+
+.icon-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-right: 5%;
+}
+
+.icon-button-badge{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 28, 106);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 90%;
+    height: 95%;
+    /* border: 1px solid snow; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header .queue{
+    width: 25%;
+    height: 90%;
+    position: relative;
+    /* border: 1px solid white; */
+    left: 75%;
+    background-color: rgb(15, 15, 90);
+    box-shadow: 5px 0px 2px  rgb(26, 26, 96);
+}
+
+header .main{
+    width: 75%;
+    height: 90%;
+    position: relative;
+    /* border: 1px solid white; */
+    left: -25%;
+    background-color: rgb(13, 13, 83);
+    box-shadow: 5px 0px 2px  rgb(26, 26, 96);
+}
+
+header .music{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(5, 5, 29);
+    box-shadow: 5px 0px 2px  rgb(31, 31, 70);
+}
+
+header .queue h1{
+    color: azure;
+    font-size: 25px;
+    margin: 40px 0 0 20px;
+}
+
+header .queue .inline{
+    left: 60%;
+    top: -5%;
+}
+
+header .style{
+    color: rgb(9, 161, 136);
+    border: none;
+}
+
+.style:hover{
+    color: aliceblue;
+}
+
+header .queue .queue_song{
+    width: 100%;
+    height: 79.5%;
+    /* border: 1px solid white; */
+    margin-top: 10px;
+
+}
+
+header .queue .queue_song .songitem li{
+    color: darkgray;
+    list-style: none;
+    margin-left: 5%;
+    display: flex;
+    margin-bottom: 5%;
+    /* padding-top: 5%; */
+}
+
+header .queue .queue_song .songitem li span{
+    padding-top: 3%;
+}
+
+
+header .queue .queue_song .songitem li img{
+    width: 15%;
+    height: 15%;
+    margin-left: 5%;
+}
+
+header .queue .queue_song .songitem li h6{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+header .queue .queue_song .songitem li h6 .subtitle{
+    color: darkgray;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.scroll {
+    overflow-y:scroll;
+    height:94%;
+    /* width:200px; */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+header .queue .queue_song .songitem li i{
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.main .mood_pst{
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 40px;
+    display: flex;
+}
+
+.main .mood_pst1{
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 40px;
+}
+
+.main .artist_pst{
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 40px;
+    /* display: flex; */
+}
+
+.main .type_pst{
+    height: 25%;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 40px;
+    /* display: flex; */
+}
+
+.main .latest_pst{
+    height: 35%;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 40px;
+}
+
+.new{
+    width: 100%;
+    height: 100%;
+}
+
+.img_pst{
+    height: 33.5vh;
+    margin: 0% 3% 0% 5%;
+    width: 24%;
+}
+
+.animation{
+    transition: transform .2s ease-in-out;
+}
+
+.animation:hover{
+    transform: scale(1.6, 1.5);
+    opacity: 0.6;
+}
+
+.box_heading{
+    color: white;
+    padding-left: 4%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.box_pst{
+    width: 35%;
+    height: 30%;
+    /* margin: 5%; */
+    margin-top: 2%;
+    margin-left: 4%;
+    /* border: 1px solid white; */
+    position: relative;
+}
+
+.box_pst_right{
+    position: relative;
+    width: 35%;
+    height: 30%;
+    left: 60%;
+    bottom: 65.6%;
+    /* border: 1px solid white; */
+}
+
+.box_pst_right_bot{
+    position: relative;
+    width: 35%;
+    height: 30%;
+    left: 60%;
+    bottom: 60%;
+    /* border: 1px solid white; */
+}
+
+.in_pst{
+    display: flex;
+}
+
+.box_pst .in_pst img{
+    height: 100%;
+    width: 20%;
+    margin-left: 2%;
+}
+
+.box_pst .in_pst img:hover{
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+
+.design{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 4%;
+    padding-top: 4%;
+}
+
+.sub_design{
+    font-size: 10px;
+    color: darkgrey;
+    padding-top: 2%;
+}
+
+.dropdown-toggle::after{
+    border: none;
+}
+
+.btn_design{
+    position: relative;
+    background-color: rgb(13, 13, 83);
+    border: none;
+    right: -280%;
+    height: 70%;
+}
+
+.btn_design:hover, .btn_design1:hover{
+    background-color: rgb(13, 13, 83);
+}
+
+.dot{
+    font-size: 200%;
+}
+
+.icon_pst{
+    padding-left: 2%;
+    padding-right: 3%;
+}
+
+.btn_design1{
+    position: relative;
+    background-color: rgb(13, 13, 83);
+    border: none;
+    right: -280%;
+    height: 68%;
+}
+
+.rel_pst1{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    margin-left: 2%;
+}
+
+.rel_pst1:hover{
+    opacity: 0.5;
+    transform: scale(1.5);
+}
+
+.art_name{
+    width: 5%;
+    height: 50%;
+    /* border: 1px solid white; */
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-top: 1%;
+    min-width: 100px;
+}
+
+.img_pst1{
+    height: 15vh;
+    width: 85%;
+    border-radius: 50%;
+    margin-left: 12%;
+}
+
+.hover{
+    opacity: 0;
+    color: white;
+    margin-left: 50%;
+    margin-top: -55%;
+}
+
+.art_name:hover .img_pst1{
+    opacity: 0.5;
+}
+
+.art_name:hover .hover{
+    opacity: 1;
+}
+
+.name_pst{
+    color: white;
+    text-align: center;
+    margin-top: 28%;
+}
+
+.artists{
+    display: flex;
+    justify-content:space-around;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    justify-content: flex-start;
+}
+
+.artists::-webkit-scrollbar {
+    display: none;
+}
+
+/* Music Stations */
+
+.st_pst{
+    height: 23vh;
+    width: 120%;
+    margin-left: 5%;
+}
+
+.img_pst2{
+    height: 17vh;
+    width: 105%;
+    border-radius: 50%;
+    margin-left: 2%;
+}
+
+
+.station_name{
+    width: px;
+    height: 100%;
+    /* border: 1px solid white; */
+    margin-left: 3.5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    min-width: 100px;
+    min-height: 110px;
+}
+
+.name_pst1{
+    color: white;
+    text-align: center;
+    margin-top: -58%;
+    opacity: 0;
+    font-weight: bolder;
+}
+
+.station_name:hover .img_pst2{
+    opacity: 0.5;
+}
+
+.station_name:hover .name_pst1{
+    opacity: 1;
+}
+
+/* Music Type */
+
+.img_pst3{
+    position: relative;
+    height: 33.5vh;
+    width: 100%;
+    margin-top: -4%;
+    opacity: 0.4;
+    min-width: 200px;
+}
+
+.type_name:hover img{
+    transform: scale(1.5);
+    transform: scaleY(2);
+}
+
+.type_name:hover .name_pst2{
+    transform: scale(1.25);
+}
+
+.name_pst2{
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: -40%;
+    font-weight: bolder;
+    opacity: 1;
+}
+
+.type_name{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Latest English */
+
+.img_pst4{
+    height: 15vh;
+    width: 85%;
+    margin-left: 12%;
+}
+
+.img_pst4:hover{
+    opacity: 0.5;
+}
+
+.date{
+    color: darkgray;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+    /* margin-top: 34%; */
+    margin-left: 11%;
+}
+
+.name_pst3{
+    color: white;
+    text-align: start;
+    margin-top: 34%;
+    margin-left: 11%;
+}
+
+
+header .music{
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+header .music .line{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid white; */
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+header .music .line .line1{
+    width: 3px;
+    height: 10px;
+    margin-right: 3px;
+    border-radius: 10px 10px 0px 0px;
+    background:rgb(9, 161, 136);
+    animation: unset;
+}
+
+header .music .line .line1:nth-child(2){
+    height: 13px;
+}
+
+header .music .line .line1:nth-child(3){
+    height: 8px;
+}
+
+header .music .active2 .line1{
+    animation: wave .5s linear infinite;
+}
+
+header .music .active2 .line1:nth-child(2){
+    animation-delay: .4s;
+}
+
+header .music .active2 .line1:nth-child(3){
+    animation-delay: .8s;
+}
+
+@keyframes line{
+    0%{
+        height: 10px;
+    }
+    50%{
+        height: 15px;
+    }
+    100%{
+        height: 10px;
+    }
+}
+
+header .music img{
+    height: 35px;
+    width: 35px;
+}
+
+header .music h5{
+    width: 130px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: white;
+    /* top: 20px; */
+    line-height: 15px;
+}
+
+header .music h5 .subtitle{
+   font-size: 11px;
+   color: darkgray;
+}
+
+header .music .icon{
+    font-size: 20px;
+    color: white;
+    margin: 0px 20px 0px 40px;
+}
+
+header .music .icon i{
+    cursor: pointer;
+    outline: none;
+}
+
+header .music .icon i:nth-child(2){
+    border: 1px solid rgb(10, 48, 136);
+    border-radius: 50%;
+    padding: 1px 3px 0px 6px;
+    margin: 0px 5px;
+    transition: .3s linear;
+}
+
+header .music .icon i #opacity{
+    opacity: 0;
+}
+
+header .music span{
+    color: white;
+    width: 32px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+header .music span .start{
+    margin: 0px 0px 0px 20px;
+}
+
+header .music .bar{
+    position: relative;
+    width: 43%;
+    height: 2px;
+    background: rgb(105, 105, 170, .1);
+    margin: 0px 15px 0px 10px;
+}
+
+header .music .bar .bar2{
+    position: absolute;
+    background: aqua;
+    width: 0%;
+    height: 100%;
+    top: 0;
+}
+
+header .music .bar .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: aqua;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+header .music .bar .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: 1px solid aqua;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px aqua;
+}
+
+header .music .bar input{
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+header .music .vol{
+    position: relative;
+    width: 100px;
+    height: 2px;
+    top: -9px;
+    margin-left: 40px;
+    background: rgb(105, 105, 170, .1);
+}
+
+header .music .vol i{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: -17px;
+    left: -30px;
+}
+
+header .music .vol input{
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: 3s linear;
+    opacity: 0;
+}
+
+header .music .vol .vol-bar{
+    position: absolute;
+    background: aqua;
+    width: 0%;
+    height: 100%;
+    top: 0;
+}
+
+header .music .vol .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: aqua;
+    border-radius: 50%;
+    left: 0%;
+    top: -1px;
+    transition: 1s linear;
+}
+
+header .music .vol .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: 1px solid aqua;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px aqua;
+}
+
+.play1:hover{
+    cursor: pointer;
+}
